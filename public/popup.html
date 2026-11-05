@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <style>
+    body { width: 240px; font: 14px system-ui, sans-serif; padding: 12px; }
+    button, select { width: 100%; margin-top: 8px; padding: 6px; }
+  </style>
+</head>
+<body>
+  <strong>Leo Translate</strong> <small>→ Tiếng Việt</small>
+  <select id="lang" title="Ngôn ngữ của truyện">
+    <option value="en">Truyện tiếng Anh</option>
+    <option value="ja">Truyện tiếng Nhật (日本語)</option>
+    <option value="ko">Truyện tiếng Hàn (한국어)</option>
+    <option value="zh">Truyện tiếng Trung (中文)</option>
+  </select>
+  <button id="translate">Dịch tất cả ảnh trên trang</button>
+  <button id="region">Quét vùng để dịch</button>
+  <select id="mode">
+    <option value="overlay">Đè lên bong bóng</option>
+    <option value="tooltip">Hiện khi rê chuột</option>
+  </select>
+  <button id="clear">Xoá bản dịch</button>
+  <script src="popup.js"></script>
+</body>
+</html>

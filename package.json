@@ -1,0 +1,28 @@
+{
+  "name": "leo-translate-extension",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "build": "node scripts/build.mjs",
+    "watch": "node scripts/build.mjs --watch",
+    "test": "vitest run",
+    "typecheck": "tsc --noEmit",
+    "fixtures": "python scripts/make-fixtures.py",
+    "serve": "node scripts/serve-fixtures.mjs"
+  },
+  "devDependencies": {
+    "@types/chrome": "^0.3.7",
+    "esbuild": "^0.28.2",
+    "typescript": "^7.0.2",
+    "vitest": "^5.0.5"
+  },
+  "dependencies": {
+    "@tesseract.js-data/chi_sim": "^1.0.0",
+    "@tesseract.js-data/eng": "^1.0.0",
+    "@tesseract.js-data/jpn": "^1.0.0",
+    "@tesseract.js-data/jpn_vert": "^1.0.0",
+    "@tesseract.js-data/kor": "^1.0.0",
+    "tesseract.js": "^7.0.0"
+  }
+}
